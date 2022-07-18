@@ -13,4 +13,5 @@ public class ArticleComment {
     private LocalDateTime modifiedAt;
     private String createdBy;
     private String modifiedBy;
+    //
 }
