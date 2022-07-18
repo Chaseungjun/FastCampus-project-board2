@@ -13,4 +13,5 @@ public class Article {
     private LocalDateTime modifiedAt;
     private String createdBy;
     private String modifiedBy;
+    //
 }
