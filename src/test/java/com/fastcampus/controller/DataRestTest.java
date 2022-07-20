@@ -1,6 +1,7 @@
 package com.fastcampus.controller;
 
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@Disabled("Spring Data Rest 통합테스트는 불필요하므로 제외시킴") // 클래스 레벨에 놓으면 해당 클래스의 모든 테스트는 실행하지 않음
 @DisplayName("Data Rest API 테스트")
 //@WebMvcTest // DataRest는 이걸로 테스트 할 수 없음
 @AutoConfigureMockMvc // McokMvc의 존재를 파악
@@ -31,6 +33,7 @@ public class DataRestTest {
     @Test
     @DisplayName("API 게시글 리스트 조회")
     void test1() throws Exception {
+
         //given
         mockMvc.perform(get("/api/articles"))
                 .andExpect(status().isOk())
