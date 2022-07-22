@@ -1,5 +1,6 @@
 package com.fastcampus.projectboard2.controller;
 
+import com.fastcampus.projectboard2.controller.ArticleController;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -24,16 +25,15 @@ class ArticleControllerTest {
         this.mockMvc = mockMvc;
     }
 
-    @Disabled("구현 중이므로 아직은 테스트 대상에서 제외")
     @Test
     @DisplayName("게시글리스트_페이지_정상호출")
     void 게시글리스트_페이지_정상호출() throws Exception {
         //given
         mockMvc.perform(get("/articles"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(model().attributeExists("articles")) // modelAttribute에 "articles"라는 키가 있는지
-                .andExpect(view().name("articles/index"));
+                .andExpect(view().name("articles/index"));  // templates폴더 하위의 파일경로 인식
     }
 
 
