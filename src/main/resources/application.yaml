@@ -28,6 +28,9 @@ spring:
   data.rest:
     base-path: /api
     detection-strategy: annotated  #@RepositoryRestResource 어노테이션이 있는 것만 적용
+  thymeleaf3:
+    decoupled-logic: true
+
 
 
 
