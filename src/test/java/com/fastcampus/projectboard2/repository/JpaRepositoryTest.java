@@ -1,8 +1,7 @@
-package com.fastcampus.repository;
+package com.fastcampus.projectboard2.repository;
 
 import com.fastcampus.projectboard2.config.JpaConfig;
 import com.fastcampus.projectboard2.domain.Article;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +11,6 @@ import org.springframework.context.annotation.Import;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 
 @DisplayName("JPA 연결 테스트")

@@ -1,4 +1,4 @@
-package com.fastcampus.repository;
+package com.fastcampus.projectboard2.repository;
 
 import com.fastcampus.projectboard2.domain.Article;
 import com.fastcampus.projectboard2.domain.QArticle;

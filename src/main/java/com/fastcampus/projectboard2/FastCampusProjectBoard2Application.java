@@ -2,7 +2,9 @@ package com.fastcampus.projectboard2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
+@ConfigurationPropertiesScan // 유저가 직접 만든 Configuration을 스캔할 수 있게 해줌
 @SpringBootApplication
 public class FastCampusProjectBoard2Application {
 
