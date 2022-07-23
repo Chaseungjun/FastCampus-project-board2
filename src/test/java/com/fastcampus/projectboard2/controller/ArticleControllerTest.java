@@ -33,7 +33,7 @@ class ArticleControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(model().attributeExists("articles")) // modelAttribute에 "articles"라는 키가 있는지
-                .andExpect(view().name("articles/index"));  // templates폴더 하위의 파일경로 인식
+                .andExpect(view().name("articles/index2"));  // templates폴더 하위의 파일경로 인식
     }
 
 
@@ -45,7 +45,7 @@ class ArticleControllerTest {
         mockMvc.perform(get("/articles/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
-                .andExpect(model().attributeExists("articles"))
+                .andExpect(model().attributeExists("article"))
                 .andExpect(model().attributeExists("articleComments"))
                 .andExpect(view().name("articles/detail"));
 
