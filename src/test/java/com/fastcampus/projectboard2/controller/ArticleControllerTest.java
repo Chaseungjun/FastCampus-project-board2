@@ -37,7 +37,6 @@ class ArticleControllerTest {
     }
 
 
-    @Disabled("구현 중이므로 아직은 테스트 대상에서 제외")
     @Test
     @DisplayName("게시글_상세페이지_정상호출")
     void 게시글_상세페이지_정상호출() throws Exception {
