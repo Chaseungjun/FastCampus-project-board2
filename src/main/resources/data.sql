@@ -1,8 +1,8 @@
--- 테스트 계정
--- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
-insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
-    ('uno', 'asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now(), 'uno')
-;
+# -- 테스트 계정
+# -- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
+# insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+#     ('uno', 'asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now(), 'uno')
+# ;
 
 insert into article (title, content, hashtag, created_by, created_at, modified_by, modified_at) values ('Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 'Teal', 'Bartlet', '2021-12-11 22:45:10', 'Tuesday', '2021-11-10 09:56:41');
 insert into article (title, content, hashtag, created_by, created_at, modified_by, modified_at) values ('Donec vitae nisi.', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 'Mauv', 'Neilla', '2021-09-28 06:46:09', 'Marthena', '2021-11-19 16:25:17');
