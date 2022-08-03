@@ -3,12 +3,16 @@ package com.fastcampus.projectboard2.repository;
 import com.fastcampus.projectboard2.domain.ArticleComment;
 import com.fastcampus.projectboard2.domain.QArticle;
 import com.fastcampus.projectboard2.domain.QArticleComment;
+import com.fastcampus.projectboard2.dto.ArticleCommentDto;
 import com.querydsl.core.types.dsl.StringExpression;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
 import org.springframework.data.querydsl.binding.QuerydslBindings;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 @RepositoryRestResource
 public interface ArticleCommentRepository extends
