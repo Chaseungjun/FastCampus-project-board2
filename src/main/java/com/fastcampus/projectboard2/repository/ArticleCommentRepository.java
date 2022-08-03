@@ -21,6 +21,8 @@ public interface ArticleCommentRepository extends
         QuerydslBinderCustomizer<QArticleComment> {
 
 
+    List<ArticleComment> findByArticle_Id(Long articleId);
+
     @Override
     default void customize(QuerydslBindings bindings, QArticleComment root){ // 인터페이스 안에서는 메서드를 구현할 수 없지만 자바 8부터 가능해짐 (default 메서드)
         bindings.excludeUnlistedProperties(true); // 리스틩을 하지 않은 프로퍼티는 검색 대상에서 제외
